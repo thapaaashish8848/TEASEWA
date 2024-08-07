@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Sewa Order Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center text-purple-700 mb-8">Tea Sewa Order Management</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Select Table to Order -->
+            <div>
+                <h2 class="text-2xl font-semibold text-center mb-4">Select Table to Order</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Table 1 to 8 -->
+                    <div class="bg-red-500 text-white p-4 rounded-lg">
+                        <h3 class="text-lg font-bold text-center mb-4">Table No. 1</h3>
+                        <ul class="mt-2 space-y-1">
+                            <table border="1" style="border-collapse: collapse; width: 50%; text-align: left;">
+                                <tr>
+                                  <th style="background-color: #ff0000; padding: 8px;">Particular</th>
+                                  <th style="background-color: #ff0000; padding: 8px;">QTY</th>
+                                  <th style="background-color: #ff0000; padding: 8px;">Price</th>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 8px;">TEA</td>
+                                  <td style="padding: 8px;">1</td>
+                                  <td style="padding: 8px;">30</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 8px;">SURYA</td>
+                                  <td style="padding: 8px;">1</td>
+                                  <td style="padding: 8px;">25</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 8px;">MOMO</td>
+                                  <td style="padding: 8px;">1</td>
+                                  <td style="padding: 8px;">130</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" style="padding: 8px;">TOTAL</td>
+                                  <td style="padding: 8px;">RS. 185</td>
+                                </tr>
+                              </table>
+                              
+                        </ul>
+                        <div class="flex justify-between mt-4">
+                            <button class="bg-yellow-500 text-black px-3 py-1 rounded">Edit Order</button>
+                            <button class="bg-green-500 text-black px-3 py-1 rounded">Save & Clear Table</button>
+                        </div>
+                    </div>
+                    <!-- Repeat for Table No. 2 to 8 with same structure -->
+                    <!-- Use a loop or copy-paste and adjust Table numbers -->
+                </div>
+            </div>
+            <!-- Click to Place Order -->
+            <div>
+                <h2 class="text-2xl font-semibold text-center mb-4">Click to Place Order</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Order Buttons -->
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">TEA</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">SURYA</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">SHIKHAR</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">B. MOMO</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">CHOWMIN</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">C. MOMO</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">LEMONADE</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">COKE</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">FRY RICE</button>
+                    <button class="bg-blue-500 text-white p-4 rounded-lg">OTHER ITEMS</button>
+                </div>
+                <h3 class="text-xl font-bold text-center mt-8">CLICKED ITEMS</h3>
+                <table border="1" style="border-collapse: collapse; width: 50%; text-align: left;">
+                    <tr>
+                      <th style="background-color: #f2f2f2; padding: 8px;">Particular</th>
+                      <th style="background-color: #f2f2f2; padding: 8px;">QTY</th>
+                      <th style="background-color: #f2f2f2; padding: 8px;">Price</th>
+                    </tr>
+                    <tr>
+                      <td style="padding: 8px;">TEA</td>
+                      <td style="padding: 8px;">1</td>
+                      <td style="padding: 8px;">30</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 8px;">SURYA</td>
+                      <td style="padding: 8px;">1</td>
+                      <td style="padding: 8px;">25</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 8px;">MOMO</td>
+                      <td style="padding: 8px;">1</td>
+                      <td style="padding: 8px;">130</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="padding: 8px;">TOTAL</td>
+                      <td style="padding: 8px;">RS. 185</td>
+                    </tr>
+                  </table>
+                  
+                </ul>
+                <div class="flex justify-between mt-4">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded">Edit Order</button>
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
